@@ -1,3 +1,31 @@
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 700px) {
+    .flex {
+        display: block;
+    }
+
+    .top {
+        display: block;
+    }
+
+    #rico {
+        display: flex;
+        justify-self: center;
+        width: 100%;
+        height: 95%;
+    }
+}
+
+
 body{
     background-image: url("../images/Asset_7.svg");
     background-size: 400px;
@@ -18,24 +46,25 @@ main{
     margin-inline: auto;
 }
 
-.container,.top-container{ 
+.container { 
     font-family: 'Monda', sans-serif;
     background-color: #CBC3C3;
-    width: 410px;
     padding-inline: 25px;
     line-height: 0.9;
     font-size: 20px;
     margin: 22px;
 }
 
-.top-container h1{
-    font-weight: 700;
-    font-size: 45px;
+#rico{
+    border: 8px solid red;
+    max-width: 95%;
+    margin: 0 auto;
 }
 
-.top-container h2{
-    font-weight: 400;
+.ricotest {
+    padding: 20px;
 }
+
 
 .container h1{
     font-weight: 400;
@@ -56,6 +85,18 @@ main{
     font-size: 20px;
     line-height: 1.4;
 }
+
+.top-text h1 {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.top-text h2 {
+    font-weight: 400;
+}
+
+
+/*
 
 .container li{
     font-weight: 400;
@@ -124,3 +165,4 @@ header{
     line-height: 150px;
     color: white;
 }
+*/

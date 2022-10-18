@@ -6,7 +6,7 @@ body{
     margin: 0px;
 }
 
-#main1{
+main{
     background-color: #BDAFAF;
     width: 1090px;
     max-width: 1090px;
@@ -14,6 +14,8 @@ body{
     margin-right: auto;
     padding-top: 40px;
     padding-bottom: 100px;
+    width: min(150ch, 100vw - 2rem);
+    margin-inline: auto;
 }
 
 .container,.top-container{ 

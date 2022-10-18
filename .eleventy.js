@@ -3,7 +3,7 @@ const Image = require("@11ty/eleventy-img");
 async function imageShortcode(src, alt, sizes) {
   let metadata = await Image(src, {
     widths: [300, 600],
-    outputDir: "./dist/img",
+    outputDir: "./dist/img/",
   });
 
   let imageAttributes = {
@@ -21,7 +21,7 @@ module.exports = function(eleventyConfig) {
    // eleventyConfig.addPassthroughCopy("src/css");
    eleventyConfig.addWatchTarget("src/sass");
 
-    //eleventyConfig.addPassthroughCopy("src/images");
+    eleventyConfig.addPassthroughCopy("src/images");
 
     //eleventyConfig.addShortcode('image', function (src, alt, width, height) {
     //    return `<img src="${src}" alt="${alt}" width="${width}" height="${height}">`;

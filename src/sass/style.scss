@@ -8,6 +8,14 @@
     justify-content: center;
 }
 
+.left {
+    width: 50%;
+}
+
+.right {
+    width: 50%;
+}
+
 @media (max-width: 700px) {
     .flex {
         display: block;
@@ -15,6 +23,14 @@
 
     .top {
         display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
     }
 
     #rico {
@@ -53,6 +69,8 @@ main{
     line-height: 0.9;
     font-size: 20px;
     margin: 22px;
+    padding-top: 1px;
+    padding-bottom: 10px;
 }
 
 #rico{
@@ -104,16 +122,6 @@ main{
     font-weight: 400;
 }
 
-
-/*
-
-.container li{
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.5;
-    margin-top: 5px;
-}
-
 header{
     height: 90px;
     background: black;
@@ -128,6 +136,38 @@ header{
     position: relative;
     top: -12px;
 }
+
+.container li{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 5px;
+}
+
+.line{
+    height: 2px; 
+    background-color: #B4A8A8;
+    border-width: 0;
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
+.year{
+    font-size: 20px;
+    color: #7B7373;
+}
+
+#end{
+    background-color: #343434;
+    height: 150px;
+    margin: 0px;
+    text-align: center;
+    line-height: 150px;
+    color: white;
+}
+
+/*
+
 
 #rico{
     border: 8px solid red;
@@ -148,30 +188,9 @@ header{
     margin-right: 40px;
 }
 
-.line{
-    height: 2px; 
-    background-color: #B4A8A8;
-    border-width: 0;
-    margin-top: -20px;
-    margin-bottom: -10px;
-}
-
-.year{
-    font-size: 20px;
-    color: #7B7373;
-}
 
 .float{
     border-top: 1px solid #CBC3C3;
     border-bottom: 1px solid #CBC3C3;
-}
-
-#end{
-    background-color: #343434;
-    height: 150px;
-    margin: 0px;
-    text-align: center;
-    line-height: 150px;
-    color: white;
 }
 */
